@@ -43,7 +43,7 @@ for filename in tqdm(os.listdir(directory)):
             package_id = data.get('packageId')
             # Get the links for mods and pdf
             mods_link = data.get('download', {}).get('modsLink')
-            pdf_link = data.get('download', {}).get('pdfLink')
+            #pdf_link = data.get('download', {}).get('pdfLink')
             # Download the files with the packageId as the filename
             download_file(mods_link, 'mods_files', f"{package_id}.mods.xml", api_key)
-            download_file(pdf_link, 'pdf_files', f"{package_id}.pdf", api_key)
+            #download_file(pdf_link, 'pdf_files', f"{package_id}.pdf", api_key)
