@@ -1,0 +1,38 @@
+{
+    "dateIssued": "2000-01-18",
+    "issue": "11",
+    "documentType": "FR",
+    "packageId": "FR-2000-01-18",
+    "collectionCode": "FR",
+    "detailsLink": "https://www.govinfo.gov/app/details/FR-2000-01-18",
+    "title": "Federal Register Volume 65 Issue 11 (January 18, 2000)",
+    "branch": "executive",
+    "collectionName": "Federal Register",
+    "volume": "65",
+    "download": {
+        "premisLink": "https://api.govinfo.gov/packages/FR-2000-01-18/premis",
+        "xmlLink": "https://api.govinfo.gov/packages/FR-2000-01-18/xml",
+        "zipLink": "https://api.govinfo.gov/packages/FR-2000-01-18/zip",
+        "modsLink": "https://api.govinfo.gov/packages/FR-2000-01-18/mods",
+        "pdfLink": "https://api.govinfo.gov/packages/FR-2000-01-18/pdf"
+    },
+    "pages": "321",
+    "governmentAuthor2": "Office of the Federal Register",
+    "governmentAuthor1": "National Archives and Records Administration",
+    "publisher": "Office of the Federal Register, National Archives and Records Administration",
+    "suDocClassNumber": "AE 2.7:, GS 4.107:, AE 2.106:",
+    "docClass": "FR",
+    "lastModified": "2024-06-08T20:18:53Z",
+    "category": "Regulatory Information",
+    "otherIdentifier": {
+        "issn": [
+            "0097-6326",
+            "0042-1219",
+            "0364-1406"
+        ],
+        "migrated-doc-id": "f:fr18ja00",
+        "ils-system-id": "000582072",
+        "stock-number": "769-004-00000-9"
+    },
+    "granulesLink": "https://api.govinfo.gov/packages/FR-2000-01-18/granules?offsetMark=*&pageSize=100"
+}
