@@ -20,13 +20,31 @@ os.makedirs('package_summaries', exist_ok=True)
 for index, row in tqdm(packages.iterrows(), total=packages.shape[0]):
     package_link = row['packageLink']
     package_id = row['packageId']
-    response = requests.get(f"{package_link}?api_key={api_key}", headers=headers)
-    if response.status_code == 200:
-        data = response.json()
-        # Define the file path
-        file_path = os.path.join('package_summaries', f"{package_id}.json")
-        # Save the JSON data to a file
-        with open(file_path, 'w') as f:
-            json.dump(data, f, indent=4)
-    else:
-        print(f"Request failed for {package_link} with status code: {response.status_code}")
+    file_path = os.path.join('package_summaries', f"{package_id}.json")
+    
+    # Check if the file already exists
+    if not os.path.exists(file_path):
+        response = requests.get(f"{package_link}?api_key={api_key}", headers=headers)
+        if response.status_code == 200:
+            data = response.json()
+            # Save the JSON data to a file
+            with open(file_path, 'w') as f:
+                json.dump(data, f, indent=4)
+        else:
+            print(f"Request failed for {package_link} with status code: {response.status_code}")
+
+# Verify that all intended files were downloaded
+missing_files = []
+for index, row in packages.iterrows():
+    package_id = row['packageId']
+    file_path = os.path.join('package_summaries', f"{package_id}.json")
+    if not os.path.exists(file_path):
+        missing_files.append(package_id)
+
+# Print missing files if any
+if missing_files:
+    print("The following files were not downloaded:")
+    for file in missing_files:
+        print(file)
+else:
+    print("All files were successfully downloaded.")
