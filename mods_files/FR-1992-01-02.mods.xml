@@ -1,0 +1,89 @@
+<mods xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/mods/v3" version="3.3" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd" ID="P0b002ee1933e82a1">
+    <name type="corporate">
+         <namePart>United States Government Publishing Office</namePart>
+         <role>
+              <roleTerm authority="marcrelator" type="text">publisher</roleTerm>
+              <roleTerm authority="marcrelator" type="code">pbl</roleTerm>
+        </role>
+         <role>
+              <roleTerm authority="marcrelator" type="text">distributor</roleTerm>
+              <roleTerm authority="marcrelator" type="code">dst</roleTerm>
+        </role>
+    </name>
+    <name type="corporate">
+         <namePart>United States</namePart>
+         <namePart>National Archives and Records Administration</namePart>
+         <namePart>Office of the Federal Register</namePart>
+         <role>
+              <roleTerm authority="marcrelator" type="text">author</roleTerm>
+              <roleTerm authority="marcrelator" type="code">aut</roleTerm>
+        </role>
+         <description>Government Organization</description>
+    </name>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">government publication</genre>
+    <language>
+         <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+    </language>
+    <extension>
+         <collectionCode>FR</collectionCode>
+         <category>Regulatory Information</category>
+         <branch>executive</branch>
+         <dateIngested>2017-01-06</dateIngested>
+    </extension>
+    <titleInfo>
+         <title>Federal Register</title>
+         <partNumber>Vol. 57, no. 1</partNumber>
+    </titleInfo>
+    <originInfo>
+         <publisher>Office of the Federal Register, National Archives and Records Administration</publisher>
+         <dateIssued encoding="w3cdtf">1992-01-02</dateIssued>
+         <issuance>continuing</issuance>
+         <frequency>daily</frequency>
+    </originInfo>
+    <physicalDescription>
+         <note type="source content type">deposited</note>
+         <digitalOrigin>reformatted digital</digitalOrigin>
+         <extent>188 p.</extent>
+    </physicalDescription>
+    <classification authority="sudocs">AE 2.7:</classification>
+    <classification authority="sudocs">GS 4.107:</classification>
+    <classification authority="sudocs">AE 2.106:</classification>
+    <classification authority="lcc">KF70.A2</classification>
+    <identifier type="uri">https://www.govinfo.gov/app/details/FR-1992-01-02</identifier>
+    <identifier type="local">P0b002ee1933e82a1</identifier>
+    <identifier type="issn">0097-6326</identifier>
+    <identifier type="issn">0042-1219</identifier>
+    <identifier type="issn">0364-1406</identifier>
+    <identifier type="stock number">769-004-00000-9</identifier>
+    <identifier type="ILS system id">000582072</identifier>
+    <location>
+         <url displayLabel="Content Detail" access="object in context">https://www.govinfo.gov/app/details/FR-1992-01-02</url>
+         <url displayLabel="PDF rendition" access="raw object">https://www.govinfo.gov/content/pkg/FR-1992-01-02/pdf/FR-1992-01-02.pdf</url>
+    </location>
+    <accessCondition type="GPO scope determination">fdlp</accessCondition>
+    <part type="issue">
+         <extent unit="pages">
+              <start>1</start>
+              <end>172</end>
+        </extent>
+    </part>
+    <recordInfo>
+         <recordContentSource authority="marcorg">DGPO</recordContentSource>
+         <recordCreationDate encoding="w3cdtf">2017-01-06</recordCreationDate>
+         <recordChangeDate encoding="w3cdtf">2023-05-07</recordChangeDate>
+         <recordIdentifier source="DGPO">FR-1992-01-02</recordIdentifier>
+         <recordOrigin>machine generated</recordOrigin>
+         <languageOfCataloging>
+              <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+    <extension>
+         <docClass>FR</docClass>
+         <accessId>FR-1992-01-02</accessId>
+         <volume>57</volume>
+         <issue>1</issue>
+         <isDigitizedFR>true</isDigitizedFR>
+         <printPageRange first="1" last="172" offset="8"></printPageRange>
+    </extension>
+</mods>
