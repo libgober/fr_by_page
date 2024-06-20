@@ -48,3 +48,20 @@ https://www.govinfo.gov/metadata/pkg/FR-1980-07-28/mods.xml
 Goes right in the middle of the 1980 and 1992 document and does not have an offset. It does have a printPageRange and appears to start right away, no front matter. So maybe this is ok
 
 So I think the first thing to do is to figure out how complete the print page range is, and if it is missing why it is missing.
+
+Ok the analysis concluded
+
+Contiguous date ranges:
+1936-03-14 00:00:00 to 1994-04-25 00:00:00 - with printPageRange
+1994-04-25 00:00:00 to 1994-04-25 00:00:00 - without printPageRange
+1994-04-26 00:00:00 to 1994-10-31 00:00:00 - with printPageRange
+1994-11-01 00:00:00 to 1994-11-01 00:00:00 - without printPageRange
+1994-11-02 00:00:00 to 1994-11-14 00:00:00 - with printPageRange
+1994-11-14 00:00:00 to 1994-11-14 00:00:00 - without printPageRange
+1994-11-15 00:00:00 to 1994-12-30 00:00:00 - with printPageRange
+1995-01-03 00:00:00 to NaT - without printPageRange
+Contiguous date ranges saved to contiguous_date_ranges.csv
+
+So basically we can hot fix 3 PDF for the weird ones in the 1994 period that did not
+have the page range thing.
+
