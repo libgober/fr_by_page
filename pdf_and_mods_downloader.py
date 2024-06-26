@@ -4,7 +4,7 @@ import requests
 from tqdm import tqdm
 import random
 
-random.seed(1)
+#random.seed(1)
 selection_probability = 0.01
 # Define the directory containing the JSON files
 directory = 'package_summaries'
@@ -49,5 +49,5 @@ for filename in tqdm(os.listdir(directory)):
             pdf_link = data.get('download', {}).get('pdfLink')
             # Download the files with the packageId as the filename
             download_file(mods_link, 'mods_files', f"{package_id}.mods.xml", api_key)
-            if random.random() < selection_probability:
+            if random.random() > -1*selection_probability:
                 download_file(pdf_link, 'pdf_files', f"{package_id}.pdf", api_key)
