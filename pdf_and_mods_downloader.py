@@ -26,15 +26,16 @@ def download_file(url, dest_folder, filename, api_key):
         print(f"File {file_path} already exists. Skipping download.")
         return
     headers = {'accept': 'application/json'}
-    response = requests.get(f"{url}?api_key={api_key}", headers=headers)
-    if response.status_code == 200:
-        with open(file_path, 'wb') as file:
-            file.write(response.content)
-    else:
-        print(f"Failed to download {url} with status code: {response.status_code}")
-        if os.path.exists(file_path):
-            os.remove(file_path)  # Delete the file if the download failed
-
+    with requests.get(f"{url}?api_key={api_key}", headers=headers, stream=True) as response:
+        if response.status_code == 200:
+            with open(file_path, 'wb') as file:
+                for chunk in response.iter_content(chunk_size=8192):
+                    file.write(chunk)
+        else:
+            print(f"Failed to download {url} with status code: {response.status_code}")
+            if os.path.exists(file_path):
+                os.remove(file_path)  # Delete the file if the download failed
+                
 # Loop over the JSON files in the directory
 for filename in tqdm(os.listdir(directory)):
     if filename.endswith('.json'):
